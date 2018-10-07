@@ -1,0 +1,44 @@
+{
+  "id": "/simple-pod",
+  "version": "2018-01-16T16:05:54.204Z",
+  "containers": [
+    {
+      "name": "simpletask1",
+      "resources": {
+        "cpus": 0.1,
+        "mem": 32,
+        "disk": 0
+      },
+      "image": {
+        "kind": "DOCKER",
+        "id": "ubuntu"
+      },
+      "exec": {
+        "command": {
+          "shell": "echo \"yolo\" && sleep 10000"
+        }
+      }
+    }
+  ],
+  "networks": [
+    {
+      "mode": "host"
+    }
+  ],
+  "scaling": {
+    "instances": 1,
+    "kind": "fixed"
+  },
+  "scheduling": {
+    "placement": {
+      "constraints": []
+    }
+  },
+  "executorResources": {
+    "cpus": 0.1,
+    "mem": 32,
+    "disk": 10
+  },
+  "volumes": [],
+  "fetch": []
+}

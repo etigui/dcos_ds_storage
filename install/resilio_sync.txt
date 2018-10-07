@@ -1,0 +1,5 @@
+curl https://download-cdn.resilio.com/stable/linux-x64/resilio-sync_x64.tar.gz
+tar -xvzf resilio-sync_x64.tar.gz
+mv rslsync /bin/
+cd /bin/
+sudo ./rslsync

@@ -1,0 +1,13 @@
+https://www.howtoforge.com/how-to-install-x2goserver-on-ubuntu-14.04-as-vnc-alternative
+
+$> apt-get update
+$> sudo apt-get install x2goclient -y
+$>x2goclient
+
+Session name : New session (any name)
+Host : 192.168.0.100 (Your IP)
+Login : administrator (or any user on your Ubuntu Server)
+SSH port : 22 ( if not altered at Ubuntu Server)
+Session type : XFCE or other if error
+
+Then put AAI credential as in my case it is user=etienne.guignard and password=pass.

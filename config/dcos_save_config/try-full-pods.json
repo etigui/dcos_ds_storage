@@ -1,0 +1,45 @@
+{
+  "id": "/try-full-pods",
+  "version": "2018-01-17T15:57:31.795Z",
+  "containers": [
+    {
+      "name": "resilio",
+      "resources": {
+        "cpus": 1,
+        "mem": 128,
+        "disk": 0
+      },
+      "image": {
+        "kind": "DOCKER",
+        "id": "qtask/sync-docker:mesos"
+      },
+      "exec": {
+        "command": {
+          "shell": "rslsync --nodaemon --config /sync-conf/sync.conf"
+        }
+      }
+    }
+  ],
+  "networks": [
+    {
+      "name": "dcos",
+      "mode": "container"
+    }
+  ],
+  "scaling": {
+    "instances": 1,
+    "kind": "fixed"
+  },
+  "scheduling": {
+    "placement": {
+      "constraints": []
+    }
+  },
+  "executorResources": {
+    "cpus": 0.1,
+    "mem": 32,
+    "disk": 10
+  },
+  "volumes": [],
+  "fetch": []
+}
