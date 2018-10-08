@@ -7,3 +7,7 @@ L’objectif principal du projet est de mettre en place et administrer un cluste
 2. [Configuration DC/OS first attempt](config_dcos.md)
 3. [Configuration Vagrant DC/OS](config_dcos_vagrant.md)
 4. [Configuration Syncthing/docker](config_docker_syncthing.md)
+
+
+## Rapport
+[Pour plus d‘informations](/doc/rapport_group7_container.pdf)
